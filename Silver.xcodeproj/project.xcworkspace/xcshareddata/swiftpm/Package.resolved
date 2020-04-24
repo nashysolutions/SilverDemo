@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Silver",
+        "repositoryURL": "git@bitbucket.org:nashysolutions/silver.git",
+        "state": {
+          "branch": null,
+          "revision": "1590e749cd8eac33855e44f024f8c08f30e56766",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
