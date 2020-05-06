@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5044B3F124616F3500371D3A /* Silver in Frameworks */ = {isa = PBXBuildFile; productRef = 5044B3F024616F3500371D3A /* Silver */; };
 		504DC5E422C1D6CA004A2424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC5E322C1D6CA004A2424 /* AppDelegate.swift */; };
 		504DC5EB22C1D6CB004A2424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504DC5EA22C1D6CB004A2424 /* Assets.xcassets */; };
 		504DC5EE22C1D6CB004A2424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504DC5EC22C1D6CB004A2424 /* LaunchScreen.storyboard */; };
@@ -26,7 +27,6 @@
 		504DC61522C1D7BB004A2424 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61422C1D7BB004A2424 /* BaseViewController.swift */; };
 		504DC61722C1D849004A2424 /* Customiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61622C1D849004A2424 /* Customiser.swift */; };
 		504DC61B22C1DFAF004A2424 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61A22C1DFAF004A2424 /* Utility.swift */; };
-		B78220272414CDEC00D5CF64 /* Silver in Frameworks */ = {isa = PBXBuildFile; productRef = B78220262414CDEC00D5CF64 /* Silver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78220272414CDEC00D5CF64 /* Silver in Frameworks */,
+				5044B3F124616F3500371D3A /* Silver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +147,7 @@
 			);
 			name = Cloud;
 			packageProductDependencies = (
-				B78220262414CDEC00D5CF64 /* Silver */,
+				5044B3F024616F3500371D3A /* Silver */,
 			);
 			productName = Cloud;
 			productReference = 504DC5E122C1D6CA004A2424 /* Cloud.app */;
@@ -178,7 +178,7 @@
 			);
 			mainGroup = 504DC5C222C1D25D004A2424;
 			packageReferences = (
-				B78220252414CDEC00D5CF64 /* XCRemoteSwiftPackageReference "silver" */,
+				5044B3EF24616F3500371D3A /* XCRemoteSwiftPackageReference "Silver" */,
 			);
 			productRefGroup = 504DC5CD22C1D25D004A2424 /* Products */;
 			projectDirPath = "";
@@ -376,7 +376,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GGEF6W7K94;
+				DEVELOPMENT_TEAM = 7SBB7KN6C6;
 				INFOPLIST_FILE = Cloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -395,7 +395,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GGEF6W7K94;
+				DEVELOPMENT_TEAM = 7SBB7KN6C6;
 				INFOPLIST_FILE = Cloud/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,9 +432,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B78220252414CDEC00D5CF64 /* XCRemoteSwiftPackageReference "silver" */ = {
+		5044B3EF24616F3500371D3A /* XCRemoteSwiftPackageReference "Silver" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@bitbucket.org:nashysolutions/silver.git";
+			repositoryURL = "https://github.com/Nash-Engineering/Silver.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
@@ -443,9 +443,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B78220262414CDEC00D5CF64 /* Silver */ = {
+		5044B3F024616F3500371D3A /* Silver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B78220252414CDEC00D5CF64 /* XCRemoteSwiftPackageReference "silver" */;
+			package = 5044B3EF24616F3500371D3A /* XCRemoteSwiftPackageReference "Silver" */;
 			productName = Silver;
 		};
 /* End XCSwiftPackageProductDependency section */

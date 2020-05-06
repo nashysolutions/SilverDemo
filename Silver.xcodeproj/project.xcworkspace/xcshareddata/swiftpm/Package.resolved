@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "Silver",
-        "repositoryURL": "git@bitbucket.org:nashysolutions/silver.git",
+        "repositoryURL": "https://github.com/Nash-Engineering/Silver.git",
         "state": {
           "branch": null,
-          "revision": "1590e749cd8eac33855e44f024f8c08f30e56766",
+          "revision": "3625ccae98eaacaae08ff5de78b4df67a496860e",
           "version": "1.0.0"
         }
       }
