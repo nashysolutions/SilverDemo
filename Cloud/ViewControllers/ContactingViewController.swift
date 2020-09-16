@@ -1,6 +1,9 @@
 import UIKit
+import Silver
 
 class ContactingViewController: BaseViewController {
+    
+    private let container = ContainerSimulator()
     
     @IBOutlet weak var iconImageView: UIImageView!
     
@@ -26,12 +29,12 @@ class ContactingViewController: BaseViewController {
                 self.spinner.isHidden = false
                 self.view.layoutIfNeeded()
             }, completion: { _ in
-                self.didFinishAnimation()
+                self.didFinishAnimation(container: self.container)
             })
         }
     }
     
-    func didFinishAnimation() {
+    func didFinishAnimation(container: CloudContainer) {
         fatalError("Must override")
     }
 

@@ -3,21 +3,21 @@ import Silver
 
 class AccountStatusViewController: ContactingViewController {
     
-    override func didFinishAnimation() {
-        CurrentUser.account { [weak self] (result) in
+    override func didFinishAnimation(container: CloudContainer) {
+        CurrentUser.account(container) { [weak self] (result) in
             switch result {
             case .success(let status):
-                DispatchQueue.main.async { self?.handle(success: status) }
+                DispatchQueue.main.async { self?.handle(success: status, container: container) }
             case .failure(let error):
                 DispatchQueue.main.async { self?.handle(error: error) }
             }
         }
     }
     
-    private func handle(success status: AccountStatus) {
+    private func handle(success status: AccountStatus, container: CloudContainer) {
         switch status {
         case .available:
-            didEstablishCurrentUserAccountIsAvailable()
+            didEstablishCurrentUserAccountIsAvailable(container: container)
         case .couldNotDetermine(let message):
             couldNotDetermine(message)
         case .noAccount(let message):
@@ -54,7 +54,7 @@ class AccountStatusViewController: ContactingViewController {
     
     // MARK: Success
     
-    func didEstablishCurrentUserAccountIsAvailable() {
+    func didEstablishCurrentUserAccountIsAvailable(container: CloudContainer) {
         fatalError("Must override")
     }
     

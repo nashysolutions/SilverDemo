@@ -3,8 +3,8 @@ import Silver
 
 class DiscoverabilityViewController: AccountStatusViewController {
     
-    override func didEstablishCurrentUserAccountIsAvailable() {
-        CurrentUser.discoverability { (result) in
+    override func didEstablishCurrentUserAccountIsAvailable(container: CloudContainer) {
+        CurrentUser.discoverability(container) { (result) in
             switch result {
             case .success(let status):
                 DispatchQueue.main.async { self.handle(success: status) }

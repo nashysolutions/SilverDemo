@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5044B3F124616F3500371D3A /* Silver in Frameworks */ = {isa = PBXBuildFile; productRef = 5044B3F024616F3500371D3A /* Silver */; };
 		504DC5E422C1D6CA004A2424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC5E322C1D6CA004A2424 /* AppDelegate.swift */; };
 		504DC5EB22C1D6CB004A2424 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504DC5EA22C1D6CB004A2424 /* Assets.xcassets */; };
 		504DC5EE22C1D6CB004A2424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504DC5EC22C1D6CB004A2424 /* LaunchScreen.storyboard */; };
@@ -27,20 +26,9 @@
 		504DC61522C1D7BB004A2424 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61422C1D7BB004A2424 /* BaseViewController.swift */; };
 		504DC61722C1D849004A2424 /* Customiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61622C1D849004A2424 /* Customiser.swift */; };
 		504DC61B22C1DFAF004A2424 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61A22C1DFAF004A2424 /* Utility.swift */; };
+		5076654D251258AE005213F9 /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076654C251258AE005213F9 /* Simulator.swift */; };
+		5076655025125F61005213F9 /* Silver in Frameworks */ = {isa = PBXBuildFile; productRef = 5076654F25125F61005213F9 /* Silver */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		504DC5F722C1D6D2004A2424 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		504DC5E122C1D6CA004A2424 /* Cloud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cloud.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +52,8 @@
 		504DC61422C1D7BB004A2424 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		504DC61622C1D849004A2424 /* Customiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customiser.swift; sourceTree = "<group>"; };
 		504DC61A22C1DFAF004A2424 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		507665492512581D005213F9 /* Silver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Silver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5076654C251258AE005213F9 /* Simulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Simulator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5044B3F124616F3500371D3A /* Silver in Frameworks */,
+				5076655025125F61005213F9 /* Silver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +73,7 @@
 			children = (
 				504DC5E222C1D6CA004A2424 /* Cloud */,
 				504DC5CD22C1D25D004A2424 /* Products */,
+				507665482512581D005213F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +116,17 @@
 				504DC5FB22C1D70B004A2424 /* NetworkFailureViewController.swift */,
 				504DC60022C1D70B004A2424 /* ProblemViewController.swift */,
 				504DC5FE22C1D70B004A2424 /* StandardSheetViewController.swift */,
+				5076654C251258AE005213F9 /* Simulator.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		507665482512581D005213F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				507665492512581D005213F9 /* Silver.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +139,6 @@
 				504DC5DD22C1D6CA004A2424 /* Sources */,
 				504DC5DE22C1D6CA004A2424 /* Frameworks */,
 				504DC5DF22C1D6CA004A2424 /* Resources */,
-				504DC5F722C1D6D2004A2424 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,7 +146,7 @@
 			);
 			name = Cloud;
 			packageProductDependencies = (
-				5044B3F024616F3500371D3A /* Silver */,
+				5076654F25125F61005213F9 /* Silver */,
 			);
 			productName = Cloud;
 			productReference = 504DC5E122C1D6CA004A2424 /* Cloud.app */;
@@ -160,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Robert Nash";
 				TargetAttributes = {
 					504DC5E022C1D6CA004A2424 = {
@@ -168,7 +167,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 504DC5C622C1D25D004A2424 /* Build configuration list for PBXProject "Silver" */;
+			buildConfigurationList = 504DC5C622C1D25D004A2424 /* Build configuration list for PBXProject "CloudDemo" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -178,7 +177,7 @@
 			);
 			mainGroup = 504DC5C222C1D25D004A2424;
 			packageReferences = (
-				5044B3EF24616F3500371D3A /* XCRemoteSwiftPackageReference "Silver" */,
+				5076654E25125F61005213F9 /* XCRemoteSwiftPackageReference "Silver" */,
 			);
 			productRefGroup = 504DC5CD22C1D25D004A2424 /* Products */;
 			projectDirPath = "";
@@ -218,6 +217,7 @@
 				504DC61722C1D849004A2424 /* Customiser.swift in Sources */,
 				504DC60622C1D70B004A2424 /* ConnectViewController.swift in Sources */,
 				504DC60822C1D70B004A2424 /* DiscoverabilityViewController.swift in Sources */,
+				5076654D251258AE005213F9 /* Simulator.swift in Sources */,
 				504DC60722C1D70B004A2424 /* NetworkFailureViewController.swift in Sources */,
 				504DC61B22C1DFAF004A2424 /* Utility.swift in Sources */,
 				504DC60B22C1D70B004A2424 /* ErrorViewController.swift in Sources */,
@@ -274,6 +274,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -338,6 +339,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -373,7 +375,6 @@
 		504DC5F122C1D6CB004A2424 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SBB7KN6C6;
@@ -392,7 +393,6 @@
 		504DC5F222C1D6CB004A2424 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SBB7KN6C6;
@@ -411,7 +411,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		504DC5C622C1D25D004A2424 /* Build configuration list for PBXProject "Silver" */ = {
+		504DC5C622C1D25D004A2424 /* Build configuration list for PBXProject "CloudDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				504DC5D222C1D25D004A2424 /* Debug */,
@@ -432,20 +432,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5044B3EF24616F3500371D3A /* XCRemoteSwiftPackageReference "Silver" */ = {
+		5076654E25125F61005213F9 /* XCRemoteSwiftPackageReference "Silver" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Nash-Engineering/Silver.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 1.1.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5044B3F024616F3500371D3A /* Silver */ = {
+		5076654F25125F61005213F9 /* Silver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5044B3EF24616F3500371D3A /* XCRemoteSwiftPackageReference "Silver" */;
+			package = 5076654E25125F61005213F9 /* XCRemoteSwiftPackageReference "Silver" */;
 			productName = Silver;
 		};
 /* End XCSwiftPackageProductDependency section */
