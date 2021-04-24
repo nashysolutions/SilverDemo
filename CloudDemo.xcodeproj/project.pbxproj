@@ -26,8 +26,8 @@
 		504DC61522C1D7BB004A2424 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61422C1D7BB004A2424 /* BaseViewController.swift */; };
 		504DC61722C1D849004A2424 /* Customiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61622C1D849004A2424 /* Customiser.swift */; };
 		504DC61B22C1DFAF004A2424 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504DC61A22C1DFAF004A2424 /* Utility.swift */; };
+		505D8E852633E47E00F60173 /* Silver in Frameworks */ = {isa = PBXBuildFile; productRef = 505D8E842633E47E00F60173 /* Silver */; };
 		5076654D251258AE005213F9 /* Simulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5076654C251258AE005213F9 /* Simulator.swift */; };
-		5076655025125F61005213F9 /* Silver in Frameworks */ = {isa = PBXBuildFile; productRef = 5076654F25125F61005213F9 /* Silver */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5076655025125F61005213F9 /* Silver in Frameworks */,
+				505D8E852633E47E00F60173 /* Silver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +94,7 @@
 				504DC61122C1D718004A2424 /* Sharing.storyboard */,
 				504DC5EC22C1D6CB004A2424 /* LaunchScreen.storyboard */,
 				504DC5EA22C1D6CB004A2424 /* Assets.xcassets */,
+				5076654C251258AE005213F9 /* Simulator.swift */,
 				504DC5F822C1D70B004A2424 /* ViewControllers */,
 				504DC5EF22C1D6CB004A2424 /* Info.plist */,
 			);
@@ -116,7 +117,6 @@
 				504DC5FB22C1D70B004A2424 /* NetworkFailureViewController.swift */,
 				504DC60022C1D70B004A2424 /* ProblemViewController.swift */,
 				504DC5FE22C1D70B004A2424 /* StandardSheetViewController.swift */,
-				5076654C251258AE005213F9 /* Simulator.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -146,7 +146,7 @@
 			);
 			name = Cloud;
 			packageProductDependencies = (
-				5076654F25125F61005213F9 /* Silver */,
+				505D8E842633E47E00F60173 /* Silver */,
 			);
 			productName = Cloud;
 			productReference = 504DC5E122C1D6CA004A2424 /* Cloud.app */;
@@ -177,7 +177,7 @@
 			);
 			mainGroup = 504DC5C222C1D25D004A2424;
 			packageReferences = (
-				5076654E25125F61005213F9 /* XCRemoteSwiftPackageReference "Silver" */,
+				505D8E832633E47E00F60173 /* XCRemoteSwiftPackageReference "Silver" */,
 			);
 			productRefGroup = 504DC5CD22C1D25D004A2424 /* Products */;
 			projectDirPath = "";
@@ -432,20 +432,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5076654E25125F61005213F9 /* XCRemoteSwiftPackageReference "Silver" */ = {
+		505D8E832633E47E00F60173 /* XCRemoteSwiftPackageReference "Silver" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Nash-Engineering/Silver.git";
+			repositoryURL = "https://github.com/nashysolutions/Silver";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.1.0;
+				minimumVersion = 1.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5076654F25125F61005213F9 /* Silver */ = {
+		505D8E842633E47E00F60173 /* Silver */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5076654E25125F61005213F9 /* XCRemoteSwiftPackageReference "Silver" */;
+			package = 505D8E832633E47E00F60173 /* XCRemoteSwiftPackageReference "Silver" */;
 			productName = Silver;
 		};
 /* End XCSwiftPackageProductDependency section */

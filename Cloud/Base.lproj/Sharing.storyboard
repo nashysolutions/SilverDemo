@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8zc-EX-aTR">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8zc-EX-aTR">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -75,8 +75,8 @@
                         <outlet property="stackView" destination="DZV-3Z-yz7" id="CJb-0U-HNA"/>
                         <outlet property="titleLabel" destination="rES-1z-M1O" id="2FE-2M-bM8"/>
                         <outletCollection property="actionButtons" destination="MAi-3Q-WpF" collectionClass="NSMutableArray" id="xvE-wo-keg"/>
-                        <segue destination="nFl-Zg-GDo" kind="presentation" identifier="Connecting" modalTransitionStyle="crossDissolve" id="Dqp-rh-znc"/>
-                        <segue destination="QqB-5k-NJn" kind="presentation" identifier="Network" modalTransitionStyle="crossDissolve" id="r8e-1M-WSe"/>
+                        <segue destination="nFl-Zg-GDo" kind="presentation" identifier="Connecting" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Dqp-rh-znc"/>
+                        <segue destination="QqB-5k-NJn" kind="presentation" identifier="Network" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="r8e-1M-WSe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U7l-GY-6A6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -88,20 +88,20 @@
             <objects>
                 <viewController id="nFl-Zg-GDo" customClass="LoadUserAccountViewController" customModule="Cloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fzt-TR-jPy">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="GRr-OQ-nze">
-                                <rect key="frame" x="20" y="20" width="335" height="597"/>
+                                <rect key="frame" x="20" y="20" width="335" height="617"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contacting iCloud" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bC1-0J-UZu">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="451"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="471"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LJJ-U0-Wnn">
-                                        <rect key="frame" x="0.0" y="469" width="335" height="128"/>
+                                        <rect key="frame" x="0.0" y="489" width="335" height="128"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="z7M-zW-tOu">
                                                 <rect key="frame" x="0.0" y="0.0" width="335" height="128"/>
@@ -149,8 +149,8 @@
                         <outlet property="iconImageView" destination="7Y6-iP-pjP" id="acp-lj-x22"/>
                         <outlet property="secondImageView" destination="qHb-Pc-8AT" id="yih-BM-neI"/>
                         <outlet property="spinner" destination="vdP-AO-o6T" id="coD-Yw-Qyb"/>
-                        <segue destination="N1O-0t-UjW" kind="presentation" identifier="Connected" modalTransitionStyle="crossDissolve" id="xLx-eZ-4jJ"/>
-                        <segue destination="34Q-dT-seH" kind="presentation" identifier="Issue" modalTransitionStyle="crossDissolve" id="NaP-mh-X6E"/>
+                        <segue destination="N1O-0t-UjW" kind="presentation" identifier="Connected" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="xLx-eZ-4jJ"/>
+                        <segue destination="34Q-dT-seH" kind="presentation" identifier="Issue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="NaP-mh-X6E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="865-Vg-DMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,20 +162,20 @@
             <objects>
                 <viewController id="N1O-0t-UjW" customClass="ConnectedViewController" customModule="Cloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EOh-qh-Iet">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="bPr-3W-GTl">
-                                <rect key="frame" x="20" y="20" width="335" height="597"/>
+                                <rect key="frame" x="20" y="20" width="335" height="617"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discoverable" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQi-oL-MdS">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="133"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="153"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0SZ-Qt-Gs4">
-                                        <rect key="frame" x="0.0" y="151" width="335" height="202"/>
+                                        <rect key="frame" x="0.0" y="171" width="335" height="202"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="tick" translatesAutoresizingMaskIntoConstraints="NO" id="gPL-iz-E7V">
                                                 <rect key="frame" x="103.5" y="0.0" width="128" height="202"/>
@@ -190,13 +190,13 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Friends can discover you if they have your AppleID email saved in their Contacts App." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j91-VL-uhR">
-                                        <rect key="frame" x="0.0" y="371" width="335" height="70"/>
+                                        <rect key="frame" x="0.0" y="391" width="335" height="70"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diL-0v-XDD">
-                                        <rect key="frame" x="0.0" y="459" width="335" height="60"/>
+                                        <rect key="frame" x="0.0" y="479" width="335" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="Zyh-5x-xNr"/>
                                         </constraints>
@@ -207,7 +207,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9i-GR-ryx">
-                                        <rect key="frame" x="0.0" y="537" width="335" height="60"/>
+                                        <rect key="frame" x="0.0" y="557" width="335" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="8E0-zS-TFV"/>
                                         </constraints>
@@ -236,7 +236,7 @@
                         <outlet property="titleLabel" destination="IQi-oL-MdS" id="LrQ-bu-jH7"/>
                         <outletCollection property="actionButtons" destination="diL-0v-XDD" collectionClass="NSMutableArray" id="cWU-D6-9wE"/>
                         <outletCollection property="actionButtons" destination="R9i-GR-ryx" collectionClass="NSMutableArray" id="q6K-vl-AL2"/>
-                        <segue destination="CNf-ZU-cEd" kind="presentation" identifier="Hide" modalTransitionStyle="crossDissolve" id="hxl-3x-2Os"/>
+                        <segue destination="CNf-ZU-cEd" kind="presentation" identifier="Hide" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="hxl-3x-2Os"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sDd-aJ-gSD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -248,20 +248,20 @@
             <objects>
                 <viewController id="QqB-5k-NJn" customClass="NetworkFailureViewController" customModule="Cloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CfR-oh-5CH">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="7ZV-yM-8MP">
-                                <rect key="frame" x="20" y="20" width="335" height="597"/>
+                                <rect key="frame" x="20" y="20" width="335" height="617"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet not found" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCV-Sz-uLp">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="532.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="552.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Your device is not connected to the internet" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmF-fQ-Uay">
-                                        <rect key="frame" x="0.0" y="550.5" width="335" height="46.5"/>
+                                        <rect key="frame" x="0.0" y="570.5" width="335" height="46.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -291,20 +291,20 @@
             <objects>
                 <viewController id="34Q-dT-seH" customClass="AwkwardViewController" customModule="Cloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NZ5-Mc-PDg">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="aMI-Sh-MAo">
-                                <rect key="frame" x="20" y="20" width="335" height="597"/>
+                                <rect key="frame" x="20" y="20" width="335" height="617"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We found an issue" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lT6-HZ-6S0">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="116.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="136.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="28"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ja-JP-jNL">
-                                        <rect key="frame" x="0.0" y="134.5" width="335" height="421"/>
+                                        <rect key="frame" x="0.0" y="154.5" width="335" height="421"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="_awkward" translatesAutoresizingMaskIntoConstraints="NO" id="TGs-c8-y3T">
                                                 <rect key="frame" x="103.5" y="0.0" width="128" height="421"/>
@@ -318,7 +318,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="There was an issue" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZ2-Oi-3na">
-                                        <rect key="frame" x="0.0" y="573.5" width="335" height="23.5"/>
+                                        <rect key="frame" x="0.0" y="593.5" width="335" height="23.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -341,29 +341,29 @@
                         <outlet property="messageLabel" destination="gZ2-Oi-3na" id="hvI-nT-w5C"/>
                         <outlet property="stackView" destination="aMI-Sh-MAo" id="XrF-HD-qRs"/>
                         <outlet property="titleLabel" destination="lT6-HZ-6S0" id="Na6-sz-6ys"/>
-                        <segue destination="nFl-Zg-GDo" kind="presentation" identifier="Contacting" modalTransitionStyle="crossDissolve" id="uN9-Da-ot5"/>
+                        <segue destination="nFl-Zg-GDo" kind="presentation" identifier="Contacting" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="uN9-Da-ot5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bb1-Bc-oov" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="819"/>
+            <point key="canvasLocation" x="-519" y="778"/>
         </scene>
         <!--Hide From Friends View Controller-->
         <scene sceneID="4fl-Ek-n3s">
             <objects>
                 <viewController id="CNf-ZU-cEd" customClass="HideFromFriendsViewController" customModule="Cloud" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MIX-aH-scz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="V8j-3C-chd">
-                                <rect key="frame" x="20" y="20" width="335" height="597"/>
+                                <rect key="frame" x="20" y="20" width="335" height="617"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JdE-1b-9aK">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="509"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="529"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="hide" translatesAutoresizingMaskIntoConstraints="NO" id="wUV-Hz-gvh">
-                                                <rect key="frame" x="103.5" y="0.0" width="128" height="509"/>
+                                                <rect key="frame" x="103.5" y="0.0" width="128" height="529"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -374,7 +374,7 @@
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="To hide from friends launch the Settings app and navigate to AppleID &gt; iCloud &gt; Look Me Up." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqE-dz-zQJ">
-                                        <rect key="frame" x="0.0" y="527" width="335" height="70"/>
+                                        <rect key="frame" x="0.0" y="547" width="335" height="70"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -404,7 +404,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dqp-rh-znc"/>
+        <segue reference="NaP-mh-X6E"/>
+        <segue reference="uN9-Da-ot5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="_awkward" width="128" height="128"/>

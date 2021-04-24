@@ -1,5 +1,6 @@
 import UIKit
 import Silver
+import CloudKit
 
 class AccountStatusViewController: ContactingViewController {
     

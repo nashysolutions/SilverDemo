@@ -11,6 +11,10 @@ import CloudKit
 
 class ContainerSimulator: CloudContainer {
     
+    var publicCloudDatabase: CKDatabase {
+        fatalError()
+    }
+    
     /// The frequency that a simulated error will occur (0-1)
     private var simulateErrorRate: Float = 1
     
