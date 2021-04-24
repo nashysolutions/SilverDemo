@@ -2,11 +2,7 @@
 
 A demonstration of [Silver](https://github.com/nashysolutions/Silver).
 
-<p align="center">
-    <a href="https://developer.apple.com/icloud/cloudkit/">
-        <img src="https://user-images.githubusercontent.com/51816980/60072085-46887980-9714-11e9-923f-bf573d41f1cb.gif" alt="Preview"/>
-  </a>
-</p>
+![](https://user-images.githubusercontent.com/51816980/60072085-46887980-9714-11e9-923f-bf573d41f1cb.gif)
 
 ## Usage
 
