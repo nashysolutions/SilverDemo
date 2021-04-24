@@ -1,15 +1,6 @@
-<p align="center">
-    <img src="Logo.png" width="480" max-width="90%" alt="Sheet" />
-</p>
+# DemoApp
 
-<p align="center">
-    <a href="https://img.shields.io/badge/carthage-compatible-brightgreen.svg">
-        <img src="https://img.shields.io/badge/carthage-compatible-brightgreen.svg" alt="Carthage"/>
-    </a>
-    <a href="https://swift.org/blog/swift-5-released/">
-        <img src="https://img.shields.io/badge/swift-5.0-orange.svg" alt="Swift"/>
-  </a>
-</p>
+A demonstration of [Silver](https://github.com/nashysolutions/Silver).
 
 <p align="center">
     <a href="https://developer.apple.com/icloud/cloudkit/">
